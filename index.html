@@ -326,22 +326,52 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <label class="modal-lable">
-                    <span>Name</span>
-                <input type="text" name="name" class="modal-input">
-                <svg class="modal-icon" width="18" height="18">
-                    <use href="./images/icons.svg#icon-person"></use>
-                </svg>
+                <span class="lable-title">Name</span>
+                <span class="input-wrap">
+                    <input type="text" name="name" class="modal-input">
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </span>
                 </label>
                 
-                <label class="modal-lable"></label>
-                    <span>Phone</span>
-                <input type="tel" name="phone" class="modal-input">
+                <label class="modal-lable">
+                <span class="lable-title">Phone</span>
+                <span class="input-wrap">
+                    <input type="tel" name="phone" class="modal-input">
+                    <svg class="modal-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </span>
+                </label>
                 
-                <label class="modal-lable"></label>
-                    <span>Email</span>
-                <input type="email" name="email" class="modal-input">
+                <label class="modal-lable">
+                <span class="lable-title">Email</span>
+                <span class="input-wrap">
+                    <input type="email" name="email" class="modal-input">
+                    <svg class="modal-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </span>
+                </label>
+
+                <label class="modal-lable comment-lable">
+                    <span class="lable-title">Comment</span>
+                    <textarea name="comment" placeholder="Text input" class="modal-textarea"></textarea>
+                </label>
+
+                <div class="privacy-check">
+                    <input type="checkbox" name="privacy" id="privacy" class="input-check visually-hidden">
+                    <label for="privacy" class="accept-text">
+                        <span>
+                            <svg class="check-icon" width="10" height="8">
+                            <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                    I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Policy</a></label>
+                </div>
                 
-                <button type="submit">Send</button>
+                <button type="submit" class="submit-btn">Send</button>
             </form>
         </div>
     </div>
